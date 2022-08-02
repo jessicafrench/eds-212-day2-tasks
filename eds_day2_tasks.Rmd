@@ -48,7 +48,7 @@ penguin_bill_length_depth_plot
 
 ```{r}
 ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
-  geom_jitter(aes(color = species)) +
+  geom_jitter(aes(color = species), size = 5) +
   ggtitle("Flipper Length by Species") +
   labs(x = "Species", 
        y = "Flipper Length (mm)")
