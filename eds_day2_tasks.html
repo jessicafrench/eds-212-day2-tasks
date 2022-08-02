@@ -370,7 +370,24 @@ pre code {
 </div>
 
 
+<pre class="r"><code>expression_a &lt;- expression(x ^ 2)
+derivative_a &lt;- deriv(expression_a, &quot;x&quot;)
+x &lt;- 3
 
+eval(expression_a)</code></pre>
+<pre><code>## [1] 9</code></pre>
+<pre class="r"><code>expression_b &lt;- expression(2 * (3 * a + 2) ^ 4 - 5)
+derivative_b &lt;- deriv(expression_b, &quot;a&quot;)
+a &lt;- 1.2
+
+eval(expression_b)</code></pre>
+<pre><code>## [1] 1961.899</code></pre>
+<pre class="r"><code>expression_c &lt;- expression((-4 * t)/(t ^ 2 + 1) ^ 3)
+derivative_c &lt;- deriv(expression_c, &quot;t&quot;)
+t &lt;- 0
+
+eval(expression_c)</code></pre>
+<pre><code>## [1] 0</code></pre>
 
 
 
