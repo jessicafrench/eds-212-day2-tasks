@@ -35,5 +35,23 @@ t <- 0
 eval(expression_c)
 ```
 
+```{r}
+penguin_bill_length_depth_plot <- ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species)) +
+  labs(x = "Bill Length (mm)", 
+       y = "Bill Depth (mm)") +
+  ggtitle("Penguin Bill Length vs Depth")
+
+penguin_bill_length_depth_plot
+  
+```
+
+```{r}
+ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
+  geom_jitter(aes(color = species)) +
+  ggtitle("Flipper Length by Species") +
+  labs(x = "Species", 
+       y = "Flipper Length (mm)")
+```
 
 
